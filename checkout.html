@@ -1,0 +1,31 @@
+<!-- checkout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aura | Checkout</title>
+  <link rel="stylesheet" href="Fashioncss.css" />
+</head>
+<body>
+  <div class="checkout-page">
+    <h1>Checkout</h1>
+    <div id="checkout-cart"></div>
+    <div class="price-breakdown">
+      <p>Subtotal: ₹<span id="subtotal-amt">0.00</span></p>
+      <p>Discount: ₹<span id="discount-amt">0.00</span></p>
+      <p>GST (18%): ₹<span id="gst-amt">0.00</span></p>
+      <p>Delivery Charges: ₹<span id="delivery-amt">0.00</span></p>
+      <h2>Grand Total: ₹<span id="grand-total">0.00</span></h2>
+    </div>
+
+    <form id="checkout-form">
+      <input type="text" placeholder="Full Name" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <textarea placeholder="Delivery Address" required></textarea>
+      <button type="submit" class="button">Place Order</button>
+    </form>
+  </div>
+
+  <script src="checkout.js"></script>
+</body>
+</html>

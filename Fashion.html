@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AurabyANAYA</title>
+    <link rel="stylesheet" href="Fashioncss.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/AurabyAnaya.png" alt="Aura Logo" class="logo-img" />&nbsp;&nbsp;
+            <span class="aura">Aura</span><span class="by">by</span><span class="anaya">Anaya</span>
+        </div>
+    
+      <ul class="nav-links">
+        <button class="nav-btn" onclick="location.href='#home'">Home</button>
+        <button class="nav-btn" onclick="location.href='#products'">Shop</button>
+        <button class="nav-btn" onclick="location.href='cart.html'">Cart</button>
+   
+      <div id="user-section">
+        <button class="nav-btn" onclick="openModal('login')">Login</button>
+      </div>
+      </ul>
+    </nav>
+  </header>
+
+ <section class="hero" id="hero-section">
+  <button class="hero-nav left" onclick="prevImage()">&#10094;</button>
+  <button class="hero-nav right" onclick="nextImage()">&#10095;</button>
+
+  <div class="hero-content" id="hero-content">
+    <h1>Wear Your Aura</h1>
+    <p>Let your fashion tell your story — graceful, confident, and uniquely you, at Aura by Anaya.</p>
+    <a href="#products" class="button">Shop Now</a>
+  </div>
+</section>
+
+<section class="product-section" id="products">
+  <h2 class="section-title">Our Latest Collection</h2>
+  <div class="product-grid">
+    <!-- Product Card 1 -->
+    <div class="product-card"
+     onclick="openProductModal('Elegant Black Dress', '₹1,199', 'A timeless black dress with minimal flair.', 'images/P 1.jpg')">
+     <img src="images/P 1.jpg" alt="Elegant Dress" />
+     <h3>Elegant Black Dress</h3>
+     <p class="price">₹1,199</p>
+     <button class="button">Add to Cart</button>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="product-card"
+    onclick="openProductModal('Boho Summer Vibes', '₹999', 'A cute ,flowy, printed & backless summer dress' ,'images/P 2.jpg')">
+      <img src="images/P 2.jpg" alt="Boho Look">
+      <h3>Boho Summer Vibes</h3>
+      <p class="price">₹999</p>
+      <button class="button">Add to Cart</button>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="product-card"
+    onclick="openProductModal('Traditional Suit Set', '₹1,299', 'Blue zari work suit set with complete work on the kurta and chunni and beautiful zari and embroided plazo gives a elegant yet traditional touch. Slay your traditionaL AURA with this beautiful handmade Suit set.', 'images/P 3.jpg')">
+      <img src="images/P 3.jpg" alt="Casual Wear">
+      <h3>Traditional Suit Set</h3>
+      <p class="price">₹1,299</p>
+      <button class="button">Add to Cart</button>
+    </div>
+    
+    <!-- Product Card 4 -->
+    <div class="product-card"
+     onclick="openProductModal('Classic Blazer Pants', '₹1,599', 'They say a formal blazer never fails — and at Aura by ANAYA, we’re elevating the game. Explore our vibrant take on classic formals, blending chic, classy, and colorful styles to help you ace every look effortlessly.', 'images/P 4.jpg')">
+      <img src="images/P 4.jpg" alt="Elegant Dress">
+      <h3>Classic Blazer Pants</h3>
+      <p class="price">₹1,599</p>
+      <button class="button">Add to Cart</button>
+    </div>
+
+    <!-- Product Card 5 -->
+    <div class="product-card" 
+     onclick="openProductModal('White Zardozi Anarkali', '₹2,999', 'It is a dream for every girl to once wear a white anarkali in her life. Then why only dream let us fulfill your dream and turn it into a reality. This White Zardozi Anarkali is a perfect match to turn your dreams into reality. ', 'images/P 5.jpg')">
+      <img src="images/P 5.jpg" alt="Boho Look">
+      <h3>White Zardozi Anarkali</h3>
+      <p class="price">₹2,999</p>
+      <button class="button">Add to Cart</button>
+    </div>
+
+    <!-- Product Card 6 -->
+    <div class="product-card"
+     onclick="openProductModal('Basic Browns', '₹999', 'A wardrobe essential that brings warmth and comfort. This chocolate brown set features subtle elegance with a casual tone — perfect for your everyday Aura. Style it up or down, Basic Browns are always in season.', 'images/P 6.jpg')">
+      <img src="images/P 6.jpg" alt="Casual Wear">
+      <h3>Basic Browns</h3>
+      <p class="price">₹999</p>
+      <button class="button">Add to Cart</button>
+    </div>
+
+    <!-- Product Card 7 -->
+    <div class="product-card"
+     onclick="openProductModal('Glamorous Style', '₹4,999', 'Turn heads and own the spotlight with this glamorous outfit. Designed for confidence and crafted to dazzle, this piece is perfect for parties, events, and everywhere your bold Aura wants to shine', 'images/P 7.jpg')">
+      <img src="images/P 7.jpg" alt="Boho Look">
+      <h3>Glamorous Style</h3>
+      <p class="price">₹4,999</p>
+      <button class="button">Add to Cart</button>
+    </div>
+
+    <!-- Product Card 8 -->
+    <div class="product-card"
+     onclick="openProductModal('Co-ord Style', '₹2,399', 'Minimal effort, maximum impact — this co-ord set brings style and symmetry to your look. Sleek, trendy, and effortlessly fashionable, it’s your go-to for looking chic without trying too hard.', 'images/P 8.jpg')">
+      <img src="images/P 8.jpg" alt="Casual Wear">
+      <h3>Co-ord Style</h3>
+      <p class="price">₹2,399</p>
+      <button class="button">Add to Cart</button>
+    </div>
+   
+  </div>
+</section>
+
+
+  <section class="products" id="products">
+    <h2>Featured Products</h2>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="images/Elasticity Solid Color Zipper Long Sleeves Loose Lapel Outerwear Jackets BROWN-S.jpg" alt="Product">
+        <h3>Stylish Jacket</h3>
+        <p class="price">₹1,999</p>
+        <button class="button">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/Summer Dress.jpg" alt="Product">
+        <h3>Summer Dress</h3>
+        <p class="price">₹1,299</p>
+        <button class="button">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/Denim Jeans.jpg" alt="Product">
+        <h3>Denim Jeans</h3>
+        <p class="price">₹1,499</p>
+        <button class="button">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AurabyAnaya. All rights reserved.</p>
+  </footer>
+
+  <div id="auth-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <div class="tab-buttons">
+      <button onclick="switchTab('login')" id="login-tab" class="active">Login</button>
+      <button onclick="switchTab('signup')" id="signup-tab">Signup</button>
+    </div>
+
+    <div class="form-wrapper">
+      <!-- Login -->
+      <form id="login-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="button">Login</button>
+      </form>
+
+      <!-- Signup -->
+      <form id="signup-form" style="display: none;">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit" class="button">Signup</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</div>
+   
+    <div id="product-modal" class="product-modal">
+  <div class="product-modal-content">
+    <span class="product-close-btn" onclick="closeProductModal()">&times;</span>
+    <img id="modal-image" src="" alt="Product">
+    <h3 id="modal-name"></h3>
+    <p id="modal-price"></p>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+  <script src="Fashionjs.js" defer> </script>
+</body>
+</html>
